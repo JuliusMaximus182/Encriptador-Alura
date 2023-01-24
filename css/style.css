@@ -1,0 +1,249 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    min-height: 95vh;
+    background-color: #5dbde7;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px 0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+}
+
+main .logo {
+    height: 48px;
+    display: flex;
+    margin-left: 2%;
+}
+
+main .input {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    gap: 16px;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+main .input textarea {
+    margin-top: 15%;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 48px;
+    background-color: #5dbde7;
+    color: #0A3871;
+    flex: 1;
+}
+
+.sign {
+    height: 18px;
+    width: 18px;
+    vertical-align: bottom;
+}
+
+main .input p {
+    color: #495057;
+    font-size: 14px;
+    line-height: 18px;
+    display: inline;
+}
+
+main .input .button {
+    margin-left: 20px;
+    width: 80%;
+    justify-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.btnenc {
+    flex: 1;
+    border-radius: 14px;
+    color: white;
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    font-size: 16px;
+    padding: 12px;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .2s all;
+}
+
+.btndes {
+    flex: 1;
+    border-radius: 14px;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    background-color: #D8DFE8;
+    font-size: 16px;
+    padding: 12px;
+    pointer-events: none;
+    cursor: pointer;
+    transition: .2s all;
+}
+
+.btnenc:hover {
+    background-color: #032957;
+}
+
+.btnenc:active {
+    transform: scale(.95);
+}
+
+.btndes:hover {
+    background-color: #bbc8d8;
+}
+
+.btndes:active {
+    transform: scale(.95);
+}
+
+main .output {
+    flex: 0.4;
+    display: flex;
+}
+
+main .output .container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 32px;
+    background-color: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+main .output #imgr {
+    width: 80%;
+    margin-top: 30px;
+}
+
+main .output #text1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #343A40;
+}
+
+main .output #text2 {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #495057;
+}
+
+main .output #resultado {
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 24px;
+    line-height: 36px;
+    color: #495057;
+    flex: 0.9;
+}
+
+main .output #btncopiar {
+    margin-top: 10%;
+    width: 70%;
+    height: 7%;
+    border-radius: 14px;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 15px;
+    border-color: #0A3871;
+    background: #D8DFE8;
+    color: #0A3871;
+    display: none;
+}
+
+footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 14px;
+    color: #0A3871;
+}
+
+footer p a {
+    text-decoration: none;
+    font-weight: 700;
+    color: inherit;
+}
+
+
+/* @Media queries */
+
+@media screen and (min-width: 768px) {
+    body {
+        padding: 20px 60px 0 40px;
+    }
+    main .input .button {
+        flex-direction: row;
+    }
+    main .output {
+        padding: 0px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        flex-direction: row;
+        gap: 40px;
+    }
+    main .input .button {
+        margin-bottom: 0;
+    }
+    main .output img {
+        display: block;
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        padding: 40px 120px 0;
+    }
+    main {
+        gap: 80px;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    main .output #imgr {
+        display: none;
+    }
+    main {
+        flex-direction: column;
+    }
+    main .output #btncopiar {
+        margin-top: auto;
+        height: 30%;
+        width: 40%;
+    }
+    main .input .button {
+        flex-direction: row;
+    }
+}

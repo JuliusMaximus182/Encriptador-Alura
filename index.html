@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+
+<body>
+
+    <main>
+        <div class="logo">
+            <img class="logo" src="imagenes/logo-alura.png" alt="logo de alura">
+        </div>
+
+        <div class="input">
+            <textarea class="inputtxt" id="inputtext" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <img class="sign" src="imagenes/sgnadmiracion.png" alt="signo de admiracion">
+                <p>Solo minusculas, sin acentos, ni caracteres especiales</p>
+            </div>
+            <div class="button">
+                <button disabled type="button" class="btnenc" id="btnenc">Encriptar!</button>
+                <button disabled type="button" class="btndes" id="btndes">Desencriptar!</button>
+            </div>
+
+        </div>
+        <div class="output">
+            <div class="container">
+                <img id="imgr" src="imagenes/muneco.png" alt="niño con lupa">
+                <p id="text1">Ningun mensaje fue encontrado</p>
+                <p id="text2">Ingrese el texto que desees encriptar o desencriptar</p>
+                <textarea id="resultado" readonly="readonly"></textarea>
+                <button type="button" id="btncopiar">Copiar</button>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Desarrollado por <a href="https://github.com/JuliusMaximus182">Julio Barceló</a></p>
+    </footer>
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>
